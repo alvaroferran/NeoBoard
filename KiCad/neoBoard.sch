@@ -29,8 +29,7 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
-LIBS:placa-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -44,9 +43,9 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Notes 7050 6800 0    138  ~ 28
-Neo Air Shield
-Text Notes 7050 7000 0    79   ~ 0
+Text Notes 7000 7000 0    236  ~ 47
+NeoBoard
+Text Notes 7050 7300 0    79   ~ 0
 Alvaro Ferrán\n
 Text Notes 800  2100 0    100  ~ 0
 3.3V REG

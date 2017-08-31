@@ -1,15 +1,15 @@
 (export (version D)
   (design
-    (source "/home/alvaro/Frikeo/(github)ARTags/pythonARTags/Hardware/placa.sch")
-    (date "Tue 29 Aug 2017 12:03:24 CEST")
-    (tool "Eeschema 4.0.7-e1-6374~58~ubuntu16.04.1")
+    (source "/home/alvaro/Frikeo/(github)NeoBoard/NeoBoard/neoBoard.sch")
+    (date "Thu 31 Aug 2017 12:52:46 CEST")
+    (tool "Eeschema no-vcs-found-758445e~59~ubuntu16.04.1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
         (title)
         (company)
         (rev)
         (date 2017-08-17)
-        (source placa.sch)
+        (source neoBoard.sch)
         (comment (number 1) (value ""))
         (comment (number 2) (value ""))
         (comment (number 3) (value ""))
@@ -486,7 +486,7 @@
         (pin (num 4) (name NC) (type NotConnected))
         (pin (num 5) (name VOUT) (type input))))
     (libpart (lib alvaroferran) (part BSS138P)
-      (description "HIGH SPEED N-MOSFET ")
+      (description "HIGH SPEED N-MOSFET")
       (footprints
         (fp TO_SOT_Packages_SMD:SOT-23))
       (fields
@@ -599,7 +599,7 @@
         (pin (num 23) (name P23) (type passive))
         (pin (num 24) (name P24) (type passive))))
     (libpart (lib alvaroferran) (part CONN_BLOCK_2)
-      (description "Terminal Block 2.54mm ")
+      (description "Terminal Block 2.54mm")
       (footprints
         (fp Connectors_Terminal_Blocks:TerminalBlock_Pheonix_MPT-2.54mm_2pol))
       (fields

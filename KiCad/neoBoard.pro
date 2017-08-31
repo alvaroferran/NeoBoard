@@ -1,4 +1,4 @@
-update=Tue 29 Aug 2017 15:53:43 CEST
+update=Thu 31 Aug 2017 12:55:29 CEST
 version=1
 last_client=kicad
 [cvpcb]
@@ -6,16 +6,6 @@ version=1
 NetIExt=net
 [general]
 version=1
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=60
 [eeschema]
 version=1
 LibDir=/home/alvaro/Programas/Kicad/alvaroferranLibrary
@@ -50,9 +40,19 @@ LibName27=opto
 LibName28=atmel
 LibName29=contrib
 LibName30=valves
+[schematic_editor]
+version=1
+PageLayoutDescrFile=/home/alvaro/Desktop/alvaroferran.kicad_wks
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceAjustPassiveValues=0
+LabSize=60
+ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
-PageLayoutDescrFile=
+PageLayoutDescrFile=/home/alvaro/Desktop/alvaroferran.kicad_wks
 LastNetListRead=
 PadDrill=0.762
 PadDrillOvalY=0.762
