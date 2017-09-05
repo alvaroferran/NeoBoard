@@ -30,7 +30,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd /home/alvaro/Frikeo/(github)NeoBoard/NeoBoard/Silkscreen/Silkscreen1-Top.png
+map_Kd Silkscreen/Silkscreen1-Top.png
 
 newmtl Material.002_Silkscreen2-Bottom.png
 Ns 96.078431
@@ -41,7 +41,7 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.000000
 d 1.000000
 illum 2
-map_Kd /home/alvaro/Frikeo/(github)NeoBoard/NeoBoard/Silkscreen/Silkscreen2-Bottom.png
+map_Kd Silkscreen/Silkscreen2-Bottom.png
 
 newmtl Material.003
 Ns 96.078431
