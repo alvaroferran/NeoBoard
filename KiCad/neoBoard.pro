@@ -1,4 +1,4 @@
-update=Thu 31 Aug 2017 12:55:29 CEST
+update=Fri 22 Sep 2017 15:27:09 CEST
 version=1
 last_client=kicad
 [cvpcb]
@@ -40,16 +40,6 @@ LibName27=opto
 LibName28=atmel
 LibName29=contrib
 LibName30=valves
-[schematic_editor]
-version=1
-PageLayoutDescrFile=/home/alvaro/Desktop/alvaroferran.kicad_wks
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=
-SpiceAjustPassiveValues=0
-LabSize=60
-ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=/home/alvaro/Desktop/alvaroferran.kicad_wks
@@ -69,3 +59,13 @@ SolderMaskMinWidth=0
 DrawSegmentWidth=0.2
 BoardOutlineThickness=0.15
 ModuleOutlineThickness=0.15
+[schematic_editor]
+version=1
+PageLayoutDescrFile=/home/alvaro/Programas/Kicad/alvaroferranLibrary/alvaroferran.kicad_wks
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceAjustPassiveValues=0
+LabSize=60
+ERC_TestSimilarLabels=1
