@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2
+EESchema Schematic File Version 3
 LIBS:alvaroferran
 LIBS:power
 LIBS:device
@@ -29,6 +29,7 @@ LIBS:opto
 LIBS:atmel
 LIBS:contrib
 LIBS:valves
+LIBS:neoBoard-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -253,28 +254,20 @@ Text Label 6300 3350 0    60   ~ 0
 SDA
 Text Label 6300 3450 0    60   ~ 0
 SCL
-Text Label 9500 5000 0    60   ~ 0
+Text Label 9750 5000 0    60   ~ 0
 SDAH
-Text Label 9500 5100 0    60   ~ 0
+Text Label 9750 5100 0    60   ~ 0
 SCLH
-Text Label 10800 5300 2    60   ~ 0
+Text Label 11050 4900 2    60   ~ 0
 MOT1A
-Text Label 10800 5400 2    60   ~ 0
+Text Label 11050 5000 2    60   ~ 0
 MOT1B
-Text Label 10800 5500 2    60   ~ 0
+Text Label 11050 5500 2    60   ~ 0
 MOT2A
-Text Label 10800 5600 2    60   ~ 0
+Text Label 11050 5600 2    60   ~ 0
 MOT2B
 Text Notes 8500 6400 0    100  ~ 0
 PWM EXTENDER
-Text Label 10800 4900 2    60   ~ 0
-GPIO0
-Text Label 10800 5000 2    60   ~ 0
-GPIO1
-Text Label 10800 5100 2    60   ~ 0
-GPIO2
-Text Label 10800 5200 2    60   ~ 0
-GPIO3
 $Comp
 L GNDA #PWR032
 U 1 1 599EA167
@@ -1998,49 +1991,45 @@ $EndComp
 $Comp
 L PCA9685 U8
 U 1 1 59C52E90
-P 10200 5300
-F 0 "U8" H 9950 5850 60  0000 C CNN
-F 1 "PCA9685" H 10050 4250 60  0000 C CNN
-F 2 "alvaroferran:TSSOP-28" H 10200 5300 60  0001 C CNN
-F 3 "" H 10200 5300 60  0001 C CNN
-	1    10200 5300
+P 10450 5300
+F 0 "U8" H 10200 5850 60  0000 C CNN
+F 1 "PCA9685" H 10300 4250 60  0000 C CNN
+F 2 "alvaroferran:TSSOP-28" H 10450 5300 60  0001 C CNN
+F 3 "" H 10450 5300 60  0001 C CNN
+	1    10450 5300
 	1    0    0    -1  
 $EndComp
-NoConn ~ 9800 6100
-NoConn ~ 9800 6200
-NoConn ~ 10500 6200
-NoConn ~ 10500 6100
-NoConn ~ 10500 6000
-NoConn ~ 10500 5900
-NoConn ~ 10500 5800
-NoConn ~ 10500 5700
+NoConn ~ 10750 6000
+NoConn ~ 10750 5900
+NoConn ~ 10750 5800
+NoConn ~ 10750 5700
 Connection ~ 9400 5400
 Wire Wire Line
-	9800 5400 9400 5400
+	9400 5400 10050 5400
 Connection ~ 9200 5300
 Wire Wire Line
-	9200 5300 9800 5300
+	9200 5300 10050 5300
 Wire Wire Line
 	9000 5150 9000 5500
 Connection ~ 9600 6000
 Connection ~ 9600 5900
 Wire Wire Line
-	9600 6000 9800 6000
+	9600 6000 10050 6000
 Wire Wire Line
-	9600 5900 9800 5900
+	9600 5900 10050 5900
 Connection ~ 9600 5800
 Wire Wire Line
-	9600 5800 9800 5800
+	9600 5800 10050 5800
 Connection ~ 9600 5700
 Wire Wire Line
-	9800 5700 9600 5700
+	9600 5700 10050 5700
 Connection ~ 9600 5600
 Wire Wire Line
-	9600 5600 9800 5600
+	9600 5600 10050 5600
 Wire Wire Line
 	9600 5500 9600 6000
 Wire Wire Line
-	9800 5500 9600 5500
+	9600 5500 10050 5500
 Wire Wire Line
 	9400 4800 9400 4950
 Wire Wire Line
@@ -2049,9 +2038,9 @@ Wire Wire Line
 	9000 4900 9000 4950
 Connection ~ 9000 5200
 Wire Wire Line
-	9800 5200 9000 5200
+	9000 5200 10050 5200
 Wire Wire Line
-	9800 5000 9500 5000
+	10050 5000 9750 5000
 Wire Notes Line
 	8900 600  8900 2200
 Wire Wire Line
@@ -2225,7 +2214,7 @@ Wire Notes Line
 Wire Notes Line
 	600  4500 11100 4500
 Wire Wire Line
-	9000 4900 9800 4900
+	9000 4900 10050 4900
 Wire Wire Line
 	8800 5500 8800 6000
 Wire Wire Line
@@ -2243,23 +2232,11 @@ Wire Wire Line
 Wire Wire Line
 	9200 5150 9200 5500
 Wire Wire Line
-	10800 5600 10500 5600
+	11050 5600 10750 5600
 Wire Wire Line
-	10800 5500 10500 5500
+	11050 5500 10750 5500
 Wire Wire Line
-	10800 5400 10500 5400
-Wire Wire Line
-	10800 5300 10500 5300
-Wire Wire Line
-	10800 5200 10500 5200
-Wire Wire Line
-	10800 5100 10500 5100
-Wire Wire Line
-	10800 5000 10500 5000
-Wire Wire Line
-	10800 4900 10500 4900
-Wire Wire Line
-	9500 5100 9800 5100
+	9750 5100 10050 5100
 Wire Wire Line
 	6500 3250 6600 3250
 Wire Wire Line
@@ -2567,4 +2544,28 @@ Wire Wire Line
 Wire Wire Line
 	3300 1300 3300 1200
 Connection ~ 4400 3700
+Wire Wire Line
+	9750 6100 10050 6100
+Wire Wire Line
+	9750 6200 10050 6200
+Text Label 9750 6100 0    60   ~ 0
+GPIO3
+Text Label 9750 6200 0    60   ~ 0
+GPIO0
+Wire Wire Line
+	11050 6100 10750 6100
+Wire Wire Line
+	11050 6200 10750 6200
+Text Label 11050 6200 2    60   ~ 0
+GPIO1
+Text Label 11050 6100 2    60   ~ 0
+GPIO2
+NoConn ~ 10750 5100
+NoConn ~ 10750 5200
+Wire Wire Line
+	11050 5000 10750 5000
+Wire Wire Line
+	11050 4900 10750 4900
+NoConn ~ 10750 5400
+NoConn ~ 10750 5300
 $EndSCHEMATC
