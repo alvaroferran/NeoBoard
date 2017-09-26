@@ -3,7 +3,7 @@
   (general
     (thickness 1.6)
     (drawings 69)
-    (tracks 1039)
+    (tracks 1050)
     (zones 0)
     (modules 74)
     (nets 80)
@@ -38,7 +38,7 @@
   )
 
   (setup
-    (last_trace_width 0.6096)
+    (last_trace_width 0.25)
     (user_trace_width 0.1524)
     (user_trace_width 0.254)
     (user_trace_width 0.3048)
@@ -3433,6 +3433,17 @@
   (gr_line (start 151.137578 71.229122) (end 150.090325 71.229122) (layer Edge.Cuts) (width 0.1))
   (gr_line (start 148.490325 69.629122) (end 148.490325 67.335634) (layer Edge.Cuts) (width 0.1))
 
+  (segment (start 178.5874 102.5144) (end 181.1528 102.5144) (width 0.3048) (layer F.Cu) (net 40) (tstamp 59CA101F))
+  (segment (start 181.1528 102.5144) (end 183.9976 102.5144) (width 0.3048) (layer F.Cu) (net 40) (tstamp 59CA1015))
+  (segment (start 181.1528 102.5144) (end 181.1528 100.076) (width 0.3048) (layer F.Cu) (net 40) (tstamp 59CA1007))
+  (via (at 168.148 72.136) (size 0.6) (drill 0.4) (layers F.Cu B.Cu) (net 40) (tstamp 59CA0AF5))
+  (via (at 168.148 72.771) (size 0.6) (drill 0.4) (layers F.Cu B.Cu) (net 40) (tstamp 59CA0AF1))
+  (via (at 167.513 72.771) (size 0.6) (drill 0.4) (layers F.Cu B.Cu) (net 40) (tstamp 59CA0AED))
+  (via (at 168.148 71.501) (size 0.6) (drill 0.4) (layers F.Cu B.Cu) (net 40) (tstamp 59CA0ACA))
+  (via (at 167.513 72.136) (size 0.6) (drill 0.4) (layers F.Cu B.Cu) (net 40))
+  (via (at 168.148 73.406) (size 0.6) (drill 0.4) (layers F.Cu B.Cu) (net 40))
+  (via (at 167.513 71.501) (size 0.6) (drill 0.4) (layers F.Cu B.Cu) (net 40))
+  (via (at 167.513 73.406) (size 0.6) (drill 0.4) (layers F.Cu B.Cu) (net 40))
   (via (at 154.178 86.995) (size 0.6096) (drill 0.3048) (layers F.Cu B.Cu) (net 40))
   (via (at 154.178 86.4235) (size 0.6096) (drill 0.3048) (layers F.Cu B.Cu) (net 40))
   (via (at 154.6225 85.979) (size 0.6096) (drill 0.3048) (layers F.Cu B.Cu) (net 40))
@@ -5359,6 +5370,13 @@
         (xy 155.781838 101.744998) (xy 156.078969 102.189685) (xy 156.488911 102.4636) (xy 156.078969 102.737515) (xy 155.781838 103.182202)
         (xy 155.7782 103.200492) (xy 155.774562 103.182202) (xy 155.477431 102.737515) (xy 155.067489 102.4636) (xy 155.477431 102.189685)
         (xy 155.774562 101.744998) (xy 155.7782 101.726708)
+      )
+    )
+    (filled_polygon
+      (pts
+        (xy 181.067299 102.0436) (xy 181.107711 102.246767) (xy 181.222796 102.419004) (xy 181.395033 102.534089) (xy 181.5982 102.574501)
+        (xy 181.722936 102.574501) (xy 181.478969 102.737515) (xy 181.432875 102.8065) (xy 180.923525 102.8065) (xy 180.877431 102.737515)
+        (xy 180.467489 102.4636) (xy 180.877431 102.189685) (xy 181.067299 101.905528)
       )
     )
     (filled_polygon
