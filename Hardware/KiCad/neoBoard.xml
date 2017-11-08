@@ -1,0 +1,1370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/home/alvaro/Frikeo/(github)NeoBoard/NeoBoard/KiCad/neoBoard.sch</source>
+    <date>Mon 16 Oct 2017 20:13:56 CEST</date>
+    <tool>Eeschema no-vcs-found-b6d54ac~60~ubuntu17.04.1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date>2017-08-17</date>
+        <source>neoBoard.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="U2">
+      <value>MCP73831</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-23-5</footprint>
+      <libsource lib="neoBoard-cache" part="MCP73831"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5995ADC8</tstamp>
+    </comp>
+    <comp ref="D2">
+      <value>LED</value>
+      <footprint>LEDs:LED_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5995BA46</tstamp>
+    </comp>
+    <comp ref="J2">
+      <value>μUSB</value>
+      <footprint>Connectors:USB_Micro-B</footprint>
+      <libsource lib="neoBoard-cache" part="μUSB"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5995CAD4</tstamp>
+    </comp>
+    <comp ref="U3">
+      <value>MIC2253-06YML-TR</value>
+      <footprint>alvaroferran:MIC2253-06YML-TR</footprint>
+      <libsource lib="neoBoard-cache" part="MIC2253-06YML-TR"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5996CB15</tstamp>
+    </comp>
+    <comp ref="D3">
+      <value>BA340A</value>
+      <footprint>Diodes_SMD:D_SMA</footprint>
+      <libsource lib="device" part="D_Schottky"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5996D5DD</tstamp>
+    </comp>
+    <comp ref="U6">
+      <value>DRV8837</value>
+      <footprint>alvaroferran:WSON-8</footprint>
+      <libsource lib="neoBoard-cache" part="DRV8837"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5996C453</tstamp>
+    </comp>
+    <comp ref="U7">
+      <value>DRV8837</value>
+      <footprint>alvaroferran:WSON-8</footprint>
+      <libsource lib="neoBoard-cache" part="DRV8837"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5996DB50</tstamp>
+    </comp>
+    <comp ref="U5">
+      <value>LMC7101AIM5</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-23-5</footprint>
+      <libsource lib="neoBoard-cache" part="LMC7101AIM5"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5996FD92</tstamp>
+    </comp>
+    <comp ref="Q1">
+      <value>BSS84</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-23</footprint>
+      <libsource lib="neoBoard-cache" part="BSS84"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59975499</tstamp>
+    </comp>
+    <comp ref="U4">
+      <value>ADS1000</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-23-6</footprint>
+      <libsource lib="neoBoard-cache" part="ADS1000"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>599C895B</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>LED</value>
+      <footprint>LEDs:LED_0603</footprint>
+      <libsource lib="device" part="LED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>599EC0DA</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>AP2112K-3.3TRG1</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-23-5</footprint>
+      <libsource lib="neoBoard-cache" part="AP2112K-3.3TRG1"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59957A1E</tstamp>
+    </comp>
+    <comp ref="C5">
+      <value>4.7uF</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <libsource lib="neoBoard-cache" part="C0402"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59A3BE74</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>330</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <libsource lib="neoBoard-cache" part="R0402"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>599F0319</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>2k</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <libsource lib="neoBoard-cache" part="R0402"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>599F04B8</tstamp>
+    </comp>
+    <comp ref="R14">
+      <value>10k</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <libsource lib="neoBoard-cache" part="R0402"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>599F2AB2</tstamp>
+    </comp>
+    <comp ref="R15">
+      <value>10k</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <libsource lib="neoBoard-cache" part="R0402"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>599F3298</tstamp>
+    </comp>
+    <comp ref="R9">
+      <value>10k</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <libsource lib="neoBoard-cache" part="R0402"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>599F3391</tstamp>
+    </comp>
+    <comp ref="R8">
+      <value>10k</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <libsource lib="neoBoard-cache" part="R0402"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>599F3499</tstamp>
+    </comp>
+    <comp ref="R11">
+      <value>10k</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <libsource lib="neoBoard-cache" part="R0402"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>599F3760</tstamp>
+    </comp>
+    <comp ref="R12">
+      <value>10k</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <libsource lib="neoBoard-cache" part="R0402"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>599F387A</tstamp>
+    </comp>
+    <comp ref="R7">
+      <value>10k</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <libsource lib="neoBoard-cache" part="R0402"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>599F3973</tstamp>
+    </comp>
+    <comp ref="R6">
+      <value>10k</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <libsource lib="neoBoard-cache" part="R0402"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>599F3A7B</tstamp>
+    </comp>
+    <comp ref="R13">
+      <value>10k</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <libsource lib="neoBoard-cache" part="R0402"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>599F3CFE</tstamp>
+    </comp>
+    <comp ref="R18">
+      <value>10k</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <libsource lib="neoBoard-cache" part="R0402"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>599F679D</tstamp>
+    </comp>
+    <comp ref="R19">
+      <value>10k</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <libsource lib="neoBoard-cache" part="R0402"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>599F6ABD</tstamp>
+    </comp>
+    <comp ref="R20">
+      <value>10k</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <libsource lib="neoBoard-cache" part="R0402"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>599F6BB5</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>330</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <libsource lib="neoBoard-cache" part="R0402"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>599F7C8D</tstamp>
+    </comp>
+    <comp ref="C6">
+      <value>4.7uF</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <libsource lib="neoBoard-cache" part="C0402"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>599F961C</tstamp>
+    </comp>
+    <comp ref="C11">
+      <value>4.7uF</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <libsource lib="neoBoard-cache" part="C0402"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>599FA40C</tstamp>
+    </comp>
+    <comp ref="C10">
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <libsource lib="neoBoard-cache" part="C0402"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>599FA5A7</tstamp>
+    </comp>
+    <comp ref="C18">
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <libsource lib="neoBoard-cache" part="C0402"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>599FC4BF</tstamp>
+    </comp>
+    <comp ref="C14">
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <libsource lib="neoBoard-cache" part="C0402"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>599FC805</tstamp>
+    </comp>
+    <comp ref="C15">
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <libsource lib="neoBoard-cache" part="C0402"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>599FCDB9</tstamp>
+    </comp>
+    <comp ref="C17">
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <libsource lib="neoBoard-cache" part="C0402"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>599FCEBA</tstamp>
+    </comp>
+    <comp ref="C16">
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <libsource lib="neoBoard-cache" part="C0402"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>599FCFD2</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>1uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <libsource lib="neoBoard-cache" part="C0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>599FDD01</tstamp>
+    </comp>
+    <comp ref="C4">
+      <value>1uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <libsource lib="neoBoard-cache" part="C0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>599FE034</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>10uF 10V</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <libsource lib="neoBoard-cache" part="C0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>599FE1A3</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>10uF 10V</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <libsource lib="neoBoard-cache" part="C0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>599FE658</tstamp>
+    </comp>
+    <comp ref="C8">
+      <value>2.2uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <libsource lib="neoBoard-cache" part="C0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>599FF303</tstamp>
+    </comp>
+    <comp ref="C12">
+      <value>0.1uF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <libsource lib="neoBoard-cache" part="C0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>599FF4F2</tstamp>
+    </comp>
+    <comp ref="C13">
+      <value>10nF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <libsource lib="neoBoard-cache" part="C0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>599FFA2E</tstamp>
+    </comp>
+    <comp ref="C7">
+      <value>100pF</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <libsource lib="neoBoard-cache" part="C0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>599FFCCE</tstamp>
+    </comp>
+    <comp ref="R5">
+      <value>30.9k</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <libsource lib="neoBoard-cache" part="R0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>599FFF1E</tstamp>
+    </comp>
+    <comp ref="R10">
+      <value>620</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <libsource lib="neoBoard-cache" part="R0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59A000B9</tstamp>
+    </comp>
+    <comp ref="R17">
+      <value>10k</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <libsource lib="neoBoard-cache" part="R0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59A006A6</tstamp>
+    </comp>
+    <comp ref="C9">
+      <value>22uF</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <libsource lib="neoBoard-cache" part="C0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59A00D1F</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>SW</value>
+      <footprint>Connectors_Terminal_Blocks:TerminalBlock_Pheonix_MPT-2.54mm_2pol</footprint>
+      <libsource lib="neoBoard-cache" part="CONN_BLOCK_2"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59A0161B</tstamp>
+    </comp>
+    <comp ref="J4">
+      <value>~</value>
+      <footprint>Connectors_Terminal_Blocks:TerminalBlock_Pheonix_MPT-2.54mm_2pol</footprint>
+      <libsource lib="neoBoard-cache" part="CONN_BLOCK_2"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59A01CD1</tstamp>
+    </comp>
+    <comp ref="J5">
+      <value>~</value>
+      <footprint>Connectors_Terminal_Blocks:TerminalBlock_Pheonix_MPT-2.54mm_2pol</footprint>
+      <libsource lib="neoBoard-cache" part="CONN_BLOCK_2"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59A025DA</tstamp>
+    </comp>
+    <comp ref="J10">
+      <value>CONN_01X04_Straight</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm</footprint>
+      <libsource lib="neoBoard-cache" part="CONN_01X04_Straight"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59A03E1A</tstamp>
+    </comp>
+    <comp ref="J8">
+      <value>CONN_01X04_Straight</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm</footprint>
+      <libsource lib="neoBoard-cache" part="CONN_01X04_Straight"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59A041FE</tstamp>
+    </comp>
+    <comp ref="J9">
+      <value>CONN_01X04_Straight</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm</footprint>
+      <libsource lib="neoBoard-cache" part="CONN_01X04_Straight"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59A042EF</tstamp>
+    </comp>
+    <comp ref="J11">
+      <value>CONN_01X04_Straight</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm</footprint>
+      <libsource lib="neoBoard-cache" part="CONN_01X04_Straight"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59A044F8</tstamp>
+    </comp>
+    <comp ref="J12">
+      <value>CONN_01X04_Straight</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm</footprint>
+      <libsource lib="neoBoard-cache" part="CONN_01X04_Straight"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59A045FE</tstamp>
+    </comp>
+    <comp ref="J13">
+      <value>CONN_01X04_Straight</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm</footprint>
+      <libsource lib="neoBoard-cache" part="CONN_01X04_Straight"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59A04709</tstamp>
+    </comp>
+    <comp ref="J3">
+      <value>BATT</value>
+      <footprint>Pin_Headers:Pin_Header_Angled_1x02_Pitch2.54mm</footprint>
+      <libsource lib="neoBoard-cache" part="CONN_01X02_Angled"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59A04ACD</tstamp>
+    </comp>
+    <comp ref="J7">
+      <value>CONN_02X12_Straight</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_2x12_Pitch2.54mm</footprint>
+      <libsource lib="neoBoard-cache" part="CONN_02X12_Straight"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59A06025</tstamp>
+    </comp>
+    <comp ref="J6">
+      <value>CONN_01X12_Straight</value>
+      <footprint>Pin_Headers:Pin_Header_Straight_1x12_Pitch2.54mm</footprint>
+      <libsource lib="neoBoard-cache" part="CONN_01X12_Straight"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59A0679B</tstamp>
+    </comp>
+    <comp ref="JP1">
+      <value>Jumper_NO</value>
+      <footprint>Connectors:GS2</footprint>
+      <libsource lib="neoBoard-cache" part="Jumper_NO"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59A07CC9</tstamp>
+    </comp>
+    <comp ref="JP2">
+      <value>Jumper_NO</value>
+      <footprint>Connectors:GS2</footprint>
+      <libsource lib="neoBoard-cache" part="Jumper_NO"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59A08392</tstamp>
+    </comp>
+    <comp ref="JP3">
+      <value>Jumper_NO</value>
+      <footprint>Connectors:GS2</footprint>
+      <libsource lib="neoBoard-cache" part="Jumper_NO"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59A08487</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>0</value>
+      <footprint>Resistors_SMD:R_0603</footprint>
+      <libsource lib="neoBoard-cache" part="R0603"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59A0A003</tstamp>
+    </comp>
+    <comp ref="Q2">
+      <value>BSS138P</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-23</footprint>
+      <libsource lib="neoBoard-cache" part="BSS138P"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59A42146</tstamp>
+    </comp>
+    <comp ref="R21">
+      <value>4.7k</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <libsource lib="neoBoard-cache" part="R0402"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59A4316C</tstamp>
+    </comp>
+    <comp ref="R22">
+      <value>4.7k</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <libsource lib="neoBoard-cache" part="R0402"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59A4363B</tstamp>
+    </comp>
+    <comp ref="Q3">
+      <value>BSS138P</value>
+      <footprint>TO_SOT_Packages_SMD:SOT-23</footprint>
+      <libsource lib="neoBoard-cache" part="BSS138P"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59A44E63</tstamp>
+    </comp>
+    <comp ref="R23">
+      <value>4.7k</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <libsource lib="neoBoard-cache" part="R0402"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59A44E75</tstamp>
+    </comp>
+    <comp ref="R24">
+      <value>4.7k</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <libsource lib="neoBoard-cache" part="R0402"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59A44E7B</tstamp>
+    </comp>
+    <comp ref="D4">
+      <value>BA340A</value>
+      <footprint>Diodes_SMD:D_SMA</footprint>
+      <libsource lib="device" part="D_Schottky"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59A6C73F</tstamp>
+    </comp>
+    <comp ref="L1">
+      <value>HPI0530-2R2</value>
+      <footprint>alvaroferran:HPI0530-2R2</footprint>
+      <libsource lib="neoBoard-cache" part="HPI0530-2R2"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59A54030</tstamp>
+    </comp>
+    <comp ref="U8">
+      <value>PCA9685</value>
+      <footprint>alvaroferran:TSSOP-28</footprint>
+      <libsource lib="neoBoard-cache" part="PCA9685"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59C52E90</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="neoBoard-cache" part="ADS1000">
+      <footprints>
+        <fp>TO_SOT_Packages_SMD:SOT-23-6</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">ADS1000</field>
+      </fields>
+      <pins>
+        <pin num="1" name="V+" type="passive"/>
+        <pin num="2" name="GND" type="passive"/>
+        <pin num="3" name="SCL" type="passive"/>
+        <pin num="4" name="SDA" type="passive"/>
+        <pin num="5" name="VCC" type="passive"/>
+        <pin num="6" name="V-" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="neoBoard-cache" part="AP2112K-3.3TRG1">
+      <footprints>
+        <fp>TO_SOT_Packages_SMD:SOT-23-5</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">AP2112K-3.3TRG1</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VIN" type="input"/>
+        <pin num="2" name="GND" type="input"/>
+        <pin num="3" name="EN" type="input"/>
+        <pin num="4" name="NC" type="NotConnected"/>
+        <pin num="5" name="VOUT" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="neoBoard-cache" part="BSS138P">
+      <footprints>
+        <fp>TO_SOT_Packages_SMD:SOT-23</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">BSS138P</field>
+      </fields>
+      <pins>
+        <pin num="1" name="G" type="input"/>
+        <pin num="2" name="S" type="passive"/>
+        <pin num="3" name="D" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="neoBoard-cache" part="C0402">
+      <footprints>
+        <fp>Capacitors_SMD:C_0402</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C0402</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="neoBoard-cache" part="C0603">
+      <footprints>
+        <fp>Capacitors_SMD:C_0603</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C0603</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="neoBoard-cache" part="CONN_01X02_Angled">
+      <footprints>
+        <fp>Pin_Headers:Pin_Header_Angled_1x02_Pitch2.54mm</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">CONN_01X02_Angled</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="neoBoard-cache" part="CONN_01X04_Straight">
+      <footprints>
+        <fp>Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">CONN_01X04_Straight</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+        <pin num="3" name="P3" type="passive"/>
+        <pin num="4" name="P4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="neoBoard-cache" part="CONN_01X12_Straight">
+      <footprints>
+        <fp>Pin_Headers:Pin_Header_Straight_1x12_Pitch2.54mm</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">CONN_01X12_Straight</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+        <pin num="3" name="P3" type="passive"/>
+        <pin num="4" name="P4" type="passive"/>
+        <pin num="5" name="P5" type="passive"/>
+        <pin num="6" name="P6" type="passive"/>
+        <pin num="7" name="P7" type="passive"/>
+        <pin num="8" name="P8" type="passive"/>
+        <pin num="9" name="P9" type="passive"/>
+        <pin num="10" name="P10" type="passive"/>
+        <pin num="11" name="P11" type="passive"/>
+        <pin num="12" name="P12" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="neoBoard-cache" part="CONN_02X12_Straight">
+      <footprints>
+        <fp>Pin_Headers:Pin_Header_Straight_2x12_Pitch2.54mm</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">CONN_02X12_Straight</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+        <pin num="3" name="P3" type="passive"/>
+        <pin num="4" name="P4" type="passive"/>
+        <pin num="5" name="P5" type="passive"/>
+        <pin num="6" name="P6" type="passive"/>
+        <pin num="7" name="P7" type="passive"/>
+        <pin num="8" name="P8" type="passive"/>
+        <pin num="9" name="P9" type="passive"/>
+        <pin num="10" name="P10" type="passive"/>
+        <pin num="11" name="P11" type="passive"/>
+        <pin num="12" name="P12" type="passive"/>
+        <pin num="13" name="P13" type="passive"/>
+        <pin num="14" name="P14" type="passive"/>
+        <pin num="15" name="P15" type="passive"/>
+        <pin num="16" name="P16" type="passive"/>
+        <pin num="17" name="P17" type="passive"/>
+        <pin num="18" name="P18" type="passive"/>
+        <pin num="19" name="P19" type="passive"/>
+        <pin num="20" name="P20" type="passive"/>
+        <pin num="21" name="P21" type="passive"/>
+        <pin num="22" name="P22" type="passive"/>
+        <pin num="23" name="P23" type="passive"/>
+        <pin num="24" name="P24" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="neoBoard-cache" part="CONN_BLOCK_2">
+      <footprints>
+        <fp>Connectors_Terminal_Blocks:TerminalBlock_Pheonix_MPT-2.54mm_2pol</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">CONN_BLOCK_2</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="neoBoard-cache" part="DRV8837">
+      <footprints>
+        <fp>alvaroferran:WSON-8</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">DRV8837</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VMOT" type="input"/>
+        <pin num="2" name="OUT1" type="input"/>
+        <pin num="3" name="OUT2" type="input"/>
+        <pin num="4" name="GND" type="input"/>
+        <pin num="5" name="IN2" type="input"/>
+        <pin num="6" name="IN1" type="input"/>
+        <pin num="7" name="~SLEEP" type="input"/>
+        <pin num="8" name="VIN" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="D_Schottky">
+      <description>Schottky diode</description>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*SingleDiode</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_Schottky</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="neoBoard-cache" part="HPI0530-2R2">
+      <footprints>
+        <fp>alvaroferran:HPI0530-2R2</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">HPI0530-2R2</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="neoBoard-cache" part="Jumper_NO">
+      <footprints>
+        <fp>Connectors:GS2</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">JP</field>
+        <field name="Value">Jumper_NO</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="LED">
+      <description>LED generic</description>
+      <footprints>
+        <fp>LED*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="neoBoard-cache" part="LMC7101AIM5">
+      <footprints>
+        <fp>TO_SOT_Packages_SMD:SOT-23-5</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LMC7101AIM5</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="output"/>
+        <pin num="2" name="~" type="input"/>
+        <pin num="3" name="+" type="input"/>
+        <pin num="4" name="-" type="input"/>
+        <pin num="5" name="~" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="neoBoard-cache" part="MCP73831">
+      <footprints>
+        <fp>TO_SOT_Packages_SMD:SOT-23-5</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">MCP73831</field>
+      </fields>
+      <pins>
+        <pin num="1" name="STAT" type="input"/>
+        <pin num="2" name="GND" type="input"/>
+        <pin num="3" name="VBAT" type="power_out"/>
+        <pin num="4" name="VIN" type="input"/>
+        <pin num="5" name="PROG" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="neoBoard-cache" part="MIC2253-06YML-TR">
+      <footprints>
+        <fp>alvaroferran:MIC2253-06YML-TR</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">MIC2253-06YML-TR</field>
+      </fields>
+      <pins>
+        <pin num="1" name="N/C" type="NotConnected"/>
+        <pin num="2" name="SS" type="input"/>
+        <pin num="3" name="FB" type="input"/>
+        <pin num="4" name="AGND" type="input"/>
+        <pin num="5" name="PGND" type="input"/>
+        <pin num="6" name="PGND" type="input"/>
+        <pin num="7" name="SW" type="BiDi"/>
+        <pin num="8" name="SW" type="BiDi"/>
+        <pin num="9" name="OVP" type="passive"/>
+        <pin num="10" name="VIN" type="input"/>
+        <pin num="11" name="EN" type="input"/>
+        <pin num="12" name="COMP" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="neoBoard-cache" part="PCA9685">
+      <footprints>
+        <fp>alvaroferran:TSSOP-28</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">PCA9685</field>
+      </fields>
+      <pins>
+        <pin num="1" name="AD0" type="input"/>
+        <pin num="2" name="AD1" type="input"/>
+        <pin num="3" name="AD2" type="input"/>
+        <pin num="4" name="AD3" type="input"/>
+        <pin num="5" name="AD4" type="input"/>
+        <pin num="6" name="P0" type="BiDi"/>
+        <pin num="7" name="P1" type="BiDi"/>
+        <pin num="8" name="P2" type="BiDi"/>
+        <pin num="9" name="P3" type="BiDi"/>
+        <pin num="10" name="P4" type="BiDi"/>
+        <pin num="11" name="P5" type="BiDi"/>
+        <pin num="12" name="P6" type="BiDi"/>
+        <pin num="13" name="P7" type="BiDi"/>
+        <pin num="14" name="GND" type="input"/>
+        <pin num="15" name="P08" type="BiDi"/>
+        <pin num="16" name="P09" type="BiDi"/>
+        <pin num="17" name="p10" type="BiDi"/>
+        <pin num="18" name="P11" type="BiDi"/>
+        <pin num="19" name="P12" type="BiDi"/>
+        <pin num="20" name="P13" type="BiDi"/>
+        <pin num="21" name="P14" type="BiDi"/>
+        <pin num="22" name="P15" type="BiDi"/>
+        <pin num="23" name="~EN" type="input"/>
+        <pin num="24" name="AD5" type="input"/>
+        <pin num="25" name="EXCLK" type="input"/>
+        <pin num="26" name="SCL" type="BiDi"/>
+        <pin num="27" name="SDA" type="BiDi"/>
+        <pin num="28" name="VCC" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="neoBoard-cache" part="R0402">
+      <footprints>
+        <fp>Resistors_SMD:R_0402</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R0402</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="neoBoard-cache" part="R0603">
+      <footprints>
+        <fp>Resistors_SMD:R_0603</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R0603</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="neoBoard-cache" part="TP0610T">
+      <aliases>
+        <alias>VP0610T</alias>
+        <alias>BSS84</alias>
+        <alias>NTR2101P</alias>
+        <alias>BSS83P</alias>
+      </aliases>
+      <footprints>
+        <fp>SOT?23*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">TP0610T</field>
+        <field name="Footprint">TO_SOT_Packages_SMD:SOT-23</field>
+      </fields>
+      <pins>
+        <pin num="1" name="G" type="input"/>
+        <pin num="2" name="S" type="passive"/>
+        <pin num="3" name="D" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="neoBoard-cache" part="μUSB">
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">μUSB</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VCC" type="input"/>
+        <pin num="2" name="D+" type="input"/>
+        <pin num="3" name="D-" type="input"/>
+        <pin num="4" name="ID" type="input"/>
+        <pin num="5" name="GND" type="input"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="device">
+      <uri>/usr/share/kicad/library/device.lib</uri>
+    </library>
+    <library logical="neoBoard-cache">
+      <uri>/home/alvaro/Frikeo/(github)NeoBoard/NeoBoard/KiCad/neoBoard-cache.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="Net-(D4-Pad1)">
+      <node ref="J7" pin="2"/>
+      <node ref="D4" pin="1"/>
+      <node ref="J7" pin="4"/>
+    </net>
+    <net code="2" name="Net-(JP1-Pad1)">
+      <node ref="R18" pin="1"/>
+      <node ref="U8" pin="1"/>
+      <node ref="JP1" pin="1"/>
+    </net>
+    <net code="3" name="/SDAH">
+      <node ref="Q2" pin="3"/>
+      <node ref="U8" pin="27"/>
+      <node ref="R22" pin="2"/>
+    </net>
+    <net code="4" name="5V">
+      <node ref="U7" pin="1"/>
+      <node ref="U3" pin="9"/>
+      <node ref="J12" pin="2"/>
+      <node ref="C3" pin="1"/>
+      <node ref="R24" pin="1"/>
+      <node ref="C1" pin="1"/>
+      <node ref="J12" pin="4"/>
+      <node ref="J12" pin="3"/>
+      <node ref="J12" pin="1"/>
+      <node ref="U6" pin="1"/>
+      <node ref="U8" pin="28"/>
+      <node ref="D3" pin="1"/>
+      <node ref="D4" pin="2"/>
+      <node ref="J10" pin="1"/>
+      <node ref="JP2" pin="2"/>
+      <node ref="JP3" pin="2"/>
+      <node ref="R5" pin="1"/>
+      <node ref="C7" pin="1"/>
+      <node ref="C9" pin="1"/>
+      <node ref="U1" pin="3"/>
+      <node ref="U1" pin="1"/>
+      <node ref="R22" pin="1"/>
+      <node ref="C18" pin="1"/>
+      <node ref="JP1" pin="2"/>
+      <node ref="C17" pin="1"/>
+      <node ref="C15" pin="1"/>
+    </net>
+    <net code="5" name="GND">
+      <node ref="U3" pin="6"/>
+      <node ref="C9" pin="2"/>
+      <node ref="J10" pin="4"/>
+      <node ref="C17" pin="2"/>
+      <node ref="C6" pin="2"/>
+      <node ref="C8" pin="2"/>
+      <node ref="C11" pin="2"/>
+      <node ref="C10" pin="2"/>
+      <node ref="C18" pin="2"/>
+      <node ref="C14" pin="2"/>
+      <node ref="R11" pin="2"/>
+      <node ref="R12" pin="2"/>
+      <node ref="R14" pin="2"/>
+      <node ref="R13" pin="2"/>
+      <node ref="R15" pin="2"/>
+      <node ref="R18" pin="2"/>
+      <node ref="R19" pin="2"/>
+      <node ref="C15" pin="2"/>
+      <node ref="R20" pin="2"/>
+      <node ref="R1" pin="1"/>
+      <node ref="U1" pin="2"/>
+      <node ref="C5" pin="2"/>
+      <node ref="R3" pin="2"/>
+      <node ref="U5" pin="5"/>
+      <node ref="U6" pin="4"/>
+      <node ref="C16" pin="2"/>
+      <node ref="C3" pin="2"/>
+      <node ref="C4" pin="2"/>
+      <node ref="C1" pin="2"/>
+      <node ref="C2" pin="2"/>
+      <node ref="U4" pin="2"/>
+      <node ref="U7" pin="4"/>
+      <node ref="U2" pin="2"/>
+      <node ref="J2" pin="5"/>
+      <node ref="U3" pin="5"/>
+      <node ref="J3" pin="1"/>
+      <node ref="J11" pin="4"/>
+      <node ref="J11" pin="3"/>
+      <node ref="J11" pin="1"/>
+      <node ref="J9" pin="4"/>
+      <node ref="J8" pin="4"/>
+      <node ref="J6" pin="12"/>
+      <node ref="J7" pin="9"/>
+      <node ref="J7" pin="6"/>
+      <node ref="J7" pin="20"/>
+      <node ref="J7" pin="14"/>
+      <node ref="J11" pin="2"/>
+      <node ref="R4" pin="1"/>
+      <node ref="U8" pin="14"/>
+      <node ref="U8" pin="5"/>
+      <node ref="U8" pin="4"/>
+      <node ref="U8" pin="25"/>
+      <node ref="U8" pin="24"/>
+      <node ref="U8" pin="23"/>
+    </net>
+    <net code="6" name="/USB2+">
+      <node ref="J6" pin="4"/>
+      <node ref="J10" pin="2"/>
+    </net>
+    <net code="7" name="/USB2-">
+      <node ref="J10" pin="3"/>
+      <node ref="J6" pin="5"/>
+    </net>
+    <net code="8" name="/SDA">
+      <node ref="R21" pin="2"/>
+      <node ref="J7" pin="3"/>
+      <node ref="J9" pin="2"/>
+      <node ref="Q2" pin="2"/>
+      <node ref="J8" pin="2"/>
+      <node ref="U4" pin="4"/>
+    </net>
+    <net code="9" name="/SCL">
+      <node ref="U4" pin="3"/>
+      <node ref="J7" pin="5"/>
+      <node ref="R23" pin="2"/>
+      <node ref="Q3" pin="2"/>
+      <node ref="J8" pin="3"/>
+      <node ref="J9" pin="3"/>
+    </net>
+    <net code="10" name="3.3V">
+      <node ref="C4" pin="1"/>
+      <node ref="Q3" pin="1"/>
+      <node ref="U6" pin="8"/>
+      <node ref="J8" pin="1"/>
+      <node ref="C11" pin="1"/>
+      <node ref="C10" pin="1"/>
+      <node ref="U5" pin="2"/>
+      <node ref="Q2" pin="1"/>
+      <node ref="R21" pin="1"/>
+      <node ref="C16" pin="1"/>
+      <node ref="U1" pin="5"/>
+      <node ref="U7" pin="8"/>
+      <node ref="U4" pin="5"/>
+      <node ref="D1" pin="2"/>
+      <node ref="J9" pin="1"/>
+      <node ref="Q1" pin="2"/>
+      <node ref="C2" pin="1"/>
+      <node ref="C14" pin="1"/>
+      <node ref="R23" pin="1"/>
+      <node ref="R6" pin="1"/>
+      <node ref="R9" pin="1"/>
+    </net>
+    <net code="11" name="VBAT">
+      <node ref="L1" pin="1"/>
+      <node ref="J1" pin="1"/>
+      <node ref="C8" pin="1"/>
+      <node ref="U3" pin="10"/>
+      <node ref="U3" pin="11"/>
+      <node ref="R7" pin="1"/>
+      <node ref="R8" pin="1"/>
+    </net>
+    <net code="12" name="/GPIO0">
+      <node ref="U8" pin="21"/>
+      <node ref="J13" pin="1"/>
+    </net>
+    <net code="13" name="/GPIO3">
+      <node ref="J13" pin="4"/>
+      <node ref="U8" pin="22"/>
+    </net>
+    <net code="14" name="/SCLH">
+      <node ref="Q3" pin="3"/>
+      <node ref="R24" pin="2"/>
+      <node ref="U8" pin="26"/>
+    </net>
+    <net code="15" name="/GPIO1">
+      <node ref="J13" pin="2"/>
+      <node ref="U8" pin="20"/>
+    </net>
+    <net code="16" name="Net-(U8-Pad8)">
+      <node ref="U8" pin="8"/>
+    </net>
+    <net code="17" name="Net-(U8-Pad9)">
+      <node ref="U8" pin="9"/>
+    </net>
+    <net code="18" name="Net-(U8-Pad18)">
+      <node ref="U8" pin="18"/>
+    </net>
+    <net code="19" name="Net-(U8-Pad17)">
+      <node ref="U8" pin="17"/>
+    </net>
+    <net code="20" name="Net-(U8-Pad16)">
+      <node ref="U8" pin="16"/>
+    </net>
+    <net code="21" name="Net-(U8-Pad15)">
+      <node ref="U8" pin="15"/>
+    </net>
+    <net code="22" name="Net-(JP3-Pad1)">
+      <node ref="JP3" pin="1"/>
+      <node ref="U8" pin="3"/>
+      <node ref="R20" pin="1"/>
+    </net>
+    <net code="23" name="Net-(JP2-Pad1)">
+      <node ref="U8" pin="2"/>
+      <node ref="R19" pin="1"/>
+      <node ref="JP2" pin="1"/>
+    </net>
+    <net code="24" name="Net-(U8-Pad10)">
+      <node ref="U8" pin="10"/>
+    </net>
+    <net code="25" name="Net-(U8-Pad11)">
+      <node ref="U8" pin="11"/>
+    </net>
+    <net code="26" name="/MOT2A">
+      <node ref="U7" pin="6"/>
+      <node ref="U8" pin="12"/>
+    </net>
+    <net code="27" name="/MOT2B">
+      <node ref="U7" pin="5"/>
+      <node ref="U8" pin="13"/>
+    </net>
+    <net code="28" name="/GPIO2">
+      <node ref="J13" pin="3"/>
+      <node ref="U8" pin="19"/>
+    </net>
+    <net code="29" name="Net-(R14-Pad1)">
+      <node ref="U4" pin="6"/>
+      <node ref="R8" pin="2"/>
+      <node ref="R14" pin="1"/>
+    </net>
+    <net code="30" name="Net-(R15-Pad1)">
+      <node ref="U4" pin="1"/>
+      <node ref="R15" pin="1"/>
+      <node ref="R9" pin="2"/>
+    </net>
+    <net code="31" name="Net-(R12-Pad1)">
+      <node ref="R12" pin="1"/>
+      <node ref="R7" pin="2"/>
+      <node ref="U5" pin="4"/>
+    </net>
+    <net code="32" name="Net-(J5-Pad2)">
+      <node ref="U7" pin="3"/>
+      <node ref="J5" pin="2"/>
+    </net>
+    <net code="33" name="Net-(R11-Pad1)">
+      <node ref="U5" pin="3"/>
+      <node ref="R6" pin="2"/>
+      <node ref="R11" pin="1"/>
+    </net>
+    <net code="34" name="Net-(Q1-Pad1)">
+      <node ref="Q1" pin="1"/>
+      <node ref="U5" pin="1"/>
+    </net>
+    <net code="35" name="Net-(C6-Pad1)">
+      <node ref="C6" pin="1"/>
+      <node ref="U2" pin="3"/>
+      <node ref="J3" pin="2"/>
+      <node ref="J1" pin="2"/>
+    </net>
+    <net code="36" name="Net-(D1-Pad1)">
+      <node ref="D1" pin="1"/>
+      <node ref="R1" pin="2"/>
+    </net>
+    <net code="37" name="Net-(C5-Pad1)">
+      <node ref="J2" pin="1"/>
+      <node ref="C5" pin="1"/>
+      <node ref="D2" pin="2"/>
+      <node ref="U2" pin="4"/>
+    </net>
+    <net code="38" name="Net-(C12-Pad2)">
+      <node ref="U3" pin="2"/>
+      <node ref="C12" pin="2"/>
+    </net>
+    <net code="39" name="GNDA">
+      <node ref="C12" pin="1"/>
+      <node ref="R4" pin="2"/>
+      <node ref="C13" pin="2"/>
+      <node ref="R17" pin="2"/>
+      <node ref="U3" pin="4"/>
+    </net>
+    <net code="40" name="Net-(R10-Pad2)">
+      <node ref="U3" pin="12"/>
+      <node ref="R10" pin="2"/>
+    </net>
+    <net code="41" name="Net-(C13-Pad1)">
+      <node ref="C13" pin="1"/>
+      <node ref="R10" pin="1"/>
+    </net>
+    <net code="42" name="Net-(R2-Pad1)">
+      <node ref="U2" pin="1"/>
+      <node ref="R2" pin="1"/>
+    </net>
+    <net code="43" name="Net-(R3-Pad1)">
+      <node ref="U2" pin="5"/>
+      <node ref="R3" pin="1"/>
+    </net>
+    <net code="44" name="Net-(D2-Pad1)">
+      <node ref="R2" pin="2"/>
+      <node ref="D2" pin="1"/>
+    </net>
+    <net code="45" name="/MOT1A">
+      <node ref="U6" pin="6"/>
+      <node ref="U8" pin="6"/>
+    </net>
+    <net code="46" name="/MOT1B">
+      <node ref="U8" pin="7"/>
+      <node ref="U6" pin="5"/>
+    </net>
+    <net code="47" name="/MOTEN">
+      <node ref="Q1" pin="3"/>
+      <node ref="U7" pin="7"/>
+      <node ref="R13" pin="1"/>
+      <node ref="U6" pin="7"/>
+    </net>
+    <net code="48" name="Net-(J4-Pad2)">
+      <node ref="U6" pin="3"/>
+      <node ref="J4" pin="2"/>
+    </net>
+    <net code="49" name="Net-(J4-Pad1)">
+      <node ref="U6" pin="2"/>
+      <node ref="J4" pin="1"/>
+    </net>
+    <net code="50" name="Net-(J5-Pad1)">
+      <node ref="U7" pin="2"/>
+      <node ref="J5" pin="1"/>
+    </net>
+    <net code="51" name="Net-(D3-Pad2)">
+      <node ref="U3" pin="7"/>
+      <node ref="L1" pin="2"/>
+      <node ref="U3" pin="8"/>
+      <node ref="D3" pin="2"/>
+    </net>
+    <net code="52" name="Net-(C7-Pad2)">
+      <node ref="U3" pin="3"/>
+      <node ref="C7" pin="2"/>
+      <node ref="R5" pin="2"/>
+      <node ref="R17" pin="1"/>
+    </net>
+    <net code="53" name="Net-(U1-Pad4)">
+      <node ref="U1" pin="4"/>
+    </net>
+    <net code="54" name="Net-(J2-Pad2)">
+      <node ref="J2" pin="2"/>
+    </net>
+    <net code="55" name="Net-(J2-Pad3)">
+      <node ref="J2" pin="3"/>
+    </net>
+    <net code="56" name="Net-(J2-Pad4)">
+      <node ref="J2" pin="4"/>
+    </net>
+    <net code="57" name="Net-(U3-Pad1)">
+      <node ref="U3" pin="1"/>
+    </net>
+    <net code="58" name="Net-(J7-Pad16)">
+      <node ref="J7" pin="16"/>
+    </net>
+    <net code="59" name="Net-(J7-Pad18)">
+      <node ref="J7" pin="18"/>
+    </net>
+    <net code="60" name="Net-(J7-Pad12)">
+      <node ref="J7" pin="12"/>
+    </net>
+    <net code="61" name="Net-(J7-Pad17)">
+      <node ref="J7" pin="17"/>
+    </net>
+    <net code="62" name="Net-(J7-Pad1)">
+      <node ref="J7" pin="1"/>
+    </net>
+    <net code="63" name="Net-(J7-Pad15)">
+      <node ref="J7" pin="15"/>
+    </net>
+    <net code="64" name="Net-(J7-Pad13)">
+      <node ref="J7" pin="13"/>
+    </net>
+    <net code="65" name="Net-(J7-Pad7)">
+      <node ref="J7" pin="7"/>
+    </net>
+    <net code="66" name="Net-(J6-Pad6)">
+      <node ref="J6" pin="6"/>
+    </net>
+    <net code="67" name="Net-(J6-Pad7)">
+      <node ref="J6" pin="7"/>
+    </net>
+    <net code="68" name="Net-(J6-Pad8)">
+      <node ref="J6" pin="8"/>
+    </net>
+    <net code="69" name="Net-(J6-Pad9)">
+      <node ref="J6" pin="9"/>
+    </net>
+    <net code="70" name="Net-(J6-Pad10)">
+      <node ref="J6" pin="10"/>
+    </net>
+    <net code="71" name="Net-(J6-Pad11)">
+      <node ref="J6" pin="11"/>
+    </net>
+    <net code="72" name="Net-(J6-Pad1)">
+      <node ref="J6" pin="1"/>
+    </net>
+    <net code="73" name="Net-(J7-Pad24)">
+      <node ref="J7" pin="24"/>
+    </net>
+    <net code="74" name="Net-(J7-Pad19)">
+      <node ref="J7" pin="19"/>
+    </net>
+    <net code="75" name="Net-(J7-Pad21)">
+      <node ref="J7" pin="21"/>
+    </net>
+    <net code="76" name="Net-(J7-Pad22)">
+      <node ref="J7" pin="22"/>
+    </net>
+    <net code="77" name="Net-(J7-Pad23)">
+      <node ref="J7" pin="23"/>
+    </net>
+    <net code="78" name="Net-(J7-Pad8)">
+      <node ref="J7" pin="8"/>
+    </net>
+    <net code="79" name="Net-(J6-Pad2)">
+      <node ref="J6" pin="2"/>
+    </net>
+    <net code="80" name="Net-(J7-Pad10)">
+      <node ref="J7" pin="10"/>
+    </net>
+    <net code="81" name="Net-(J7-Pad11)">
+      <node ref="J7" pin="11"/>
+    </net>
+    <net code="82" name="Net-(J6-Pad3)">
+      <node ref="J6" pin="3"/>
+    </net>
+  </nets>
+</export>

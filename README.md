@@ -1,7 +1,7 @@
 # NeoBoard
 
 <p align="center">
-<img src="3D/neoBoard3D.png" >
+<img src="Hardware/3D/neoBoard3D.png" >
 </p>
 
 <br>
@@ -10,5 +10,5 @@ NeoBoard is a robotics controller shield for the [NanoPi Neo Air](http://nanopi.
 
 
 <p align="center">
-<img src="3D/neoBoard.png" >
+<img src="Hardware/3D/neoBoard.png" >
 </p>
