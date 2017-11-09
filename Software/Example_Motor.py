@@ -1,13 +1,10 @@
 #!/usr/bin/python
 
 import time
-from NeoBoardClasses import PCA9685, ADS1000
+from NeoBoardClasses import PCA9685
 
 PCA9685_ADDRESS = 0x40
-ADS1000_ADDRESS = 0x48
-
 PCA9685 = PCA9685(PCA9685_ADDRESS)
-ADS1000 = ADS1000(ADS1000_ADDRESS)
 
 valMin = 0
 valMax = 100
@@ -25,7 +22,7 @@ for speed in range(valMin, -valMax, -increment):
 for speed in range(-valMax, -valMin, increment):
     speedValues.append(speed)
 
-# Iterate though different speeds
+# Iterate through different speeds
 for speed in speedValues:
     print(speed)
     if speed >= 0:
@@ -38,7 +35,3 @@ for speed in speedValues:
 
 # Turn off all outputs
 PCA9685.writeAllOff()
-
-# Read battery level
-voltage, percentage = ADS1000.readBattery()
-print("Battery level is {:.2f}V, {:.2f}%".format(voltage, percentage))
