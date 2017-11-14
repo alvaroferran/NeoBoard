@@ -4,8 +4,7 @@ import smbus
 import time
 
 
-
-def map(vx, v1, v2, n1, n2):
+def mapValues(vx, v1, v2, n1, n2):
     # v1 start of range, v2 end of range, vx the starting number
     percentage = (vx - v1) / (v2 - v1)
     # n1 start of new range, n2 end of new range
@@ -34,7 +33,7 @@ class PCA9685:
         self.servoMin = 128.0
         self.servoMax = 512.0
         scale = self.frequency / 50.0
-        value = int(map(angle, 0.0, 180.0, self.servoMin*scale, self.servoMax*scale))
+        value = int(mapValues(angle, 0.0, 180.0, self.servoMin*scale, self.servoMax*scale))
         self.writeValues(pin, value)
 
     def setFrequency(self, frequency):
@@ -97,7 +96,7 @@ class ADS1000:
         adc = adcH << 8 | rawData[1]           # Create 12bit word
         adc = self.twos_complement(adc, 12)    # Find decimal equivalent
         voltage = (1.625-adc*3.25/2048)*2      # 3V3 is actually at 3.25V, YMMV
-        percent = map(voltage, 3.3, 4.04, 0, 100)
+        percent = mapValues(voltage, 3.3, 4.04, 0, 100)
         if percent > 100:                      # Max voltage when not charging
             percent = 100
         return (voltage, percent)
