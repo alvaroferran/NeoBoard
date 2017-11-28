@@ -4,6 +4,9 @@ import smbus
 import time
 
 
+"""
+Helper functions used throughout the classes.
+"""
 def mapValues(vx, v1, v2, n1, n2):
     # v1 start of range, v2 end of range, vx the starting number
     percentage = (vx - v1) / (v2 - v1)
@@ -11,29 +14,43 @@ def mapValues(vx, v1, v2, n1, n2):
     return (n2 - n1) * percentage + n1
 
 
+def constrain(value, minVal, maxVal):
+    if value < minVal:
+        value = minVal
+    if value > maxVal:
+        value = maxVal
+    return value
+
+
 
 
 class PCA9685:
 
-    def __init__(self, PCA9685):
+    """
+    Class to intialize and control the PCA9685 PWM generator, including setting
+    voltages in form of percentages or driving servos.
+    """
+
+    def __init__(self, address=0x40):
         self.bus = smbus.SMBus(0)    # /dev/i2c-0
-        self.address = PCA9685
+        self.address = address
         self.pins = [14, 13, 12, 15, 0, 1, 6, 7]    # P0-P7
         self.frequency = 200    # Default with 25Mhz oscillator
         self.startConfig()
 
     def writePWM(self, pin, percentage):
-        percentage = self.checkBoundaries(percentage, 0, 100)
+        percentage = constrain(percentage, 0, 100)
         percentage = int(percentage * 40.95)     # 0-100% -> 0-4095
         self.writeValues(pin, percentage)
 
     def writeServo(self, pin, angle):
-        angle = self.checkBoundaries(angle, 0, 180)
+        angle = constrain(angle, 0, 180)
         # Limit values at 50Hz, found experimentally
         self.servoMin = 128.0
         self.servoMax = 512.0
         scale = self.frequency / 50.0
-        value = int(mapValues(angle, 0.0, 180.0, self.servoMin*scale, self.servoMax*scale))
+        value = int(mapValues(angle, 0.0, 180.0, self.servoMin*scale,
+                    self.servoMax*scale))
         self.writeValues(pin, value)
 
     def setFrequency(self, frequency):
@@ -42,7 +59,7 @@ class PCA9685:
         conf = (conf & 0xEF) | 0x10
         self.bus.write_byte_data(self.address, 0x00, conf)
         # Calculate prescale from datasheet
-        frequency = self.checkBoundaries(frequency, 24, 1526)
+        frequency = constrain(frequency, 24, 1526)
         prescale = int(round(25000000.0/(4096*frequency))-1)
         self.bus.write_byte_data(self.address, 0xFE, prescale)
         # Actual frequency due to rounding errors
@@ -73,21 +90,18 @@ class PCA9685:
         time.sleep(0.001)
         self.writeAllOff()
 
-    def checkBoundaries(self, value, minVal, maxVal):
-        if value < minVal:
-            value = minVal
-        if value > maxVal:
-            value = maxVal
-        return value
-
 
 
 
 class ADS1000:
 
-    def __init__(self, ADS1000):
+    """
+    Class to intialize and read battery levels from the ADS1000 ADC
+    """
+
+    def __init__(self, address=0x48):
         self.bus = smbus.SMBus(0)    # /dev/i2c-0
-        self.address = ADS1000
+        self.address = address
 
     def readBattery(self):
         rawData = self.bus.read_i2c_block_data(self.address, 0x00, 2)
@@ -104,3 +118,78 @@ class ADS1000:
     def twos_complement(self, input_value, num_bits):
         mask = 2**(num_bits - 1)
         return -(input_value & mask) + (input_value & ~mask)
+
+
+
+
+class DifferentialDrive:
+
+    """
+    Class to take high-level orders of robot speed and direction and translate
+    to wheel speeds to individual PWM settings using the PCA9685 class.
+    """
+
+    def __init__(self, MotL1, MotL2, MotR1, MotR2, speedMin=10, speedMax=100,
+                 address=0x40):
+        self.pca9685 = PCA9685(address)
+        self.motL1 = MotL1
+        self.motL2 = MotL2
+        self.motR1 = MotR1
+        self.motR2 = MotR2
+        self.maxSpeed = speedMax
+        self.minSpeed = speedMin
+
+    def drive(self, steering, throttle, mode=0):
+        delay = 0.005
+        if mode == 1 and throttle < 0:
+            motATS = constrain(throttle * (1.0 - steering), -1.0, 1.0)
+            motBTS = constrain(throttle * (1.0 + steering), -1.0, 1.0)
+        else:
+            motATS = constrain(throttle * (1.0 + steering), -1.0, 1.0)
+            motBTS = constrain(throttle * (1.0 - steering), -1.0, 1.0)
+        if mode == 1:
+            # motAS = + steering * (1.0 - abs(throttle))
+            # motBS = - steering * (1.0 - abs(throttle))
+            motAS = + steering * (0.1 - abs(throttle)*0.1)
+            motBS = - steering * (0.1 - abs(throttle)*0.1)
+        else:
+            motAS = 0.0
+            motBS = 0.0
+        motA = constrain(motATS+motAS, -1.0, 1.0)
+        motB = constrain(motBTS+motBS, -1.0, 1.0)
+        # print ("MotA: {:.2f} MotB: {:.2f}".format(motA, motB))
+        if motA > 0:
+            self.pca9685.writePWM(self.motL1, mapValues(motA, 0.0, 1.0,
+                                  self.minSpeed, self.maxSpeed))
+            time.sleep(delay)
+            self.pca9685.writePWM(self.motL2, 0)
+            time.sleep(delay)
+        elif motA < 0:
+            self.pca9685.writePWM(self.motL1, 0)
+            time.sleep(delay)
+            self.pca9685.writePWM(self.motL2, mapValues(abs(motA), 0.0, 1.0,
+                                  self.minSpeed, self.maxSpeed))
+            time.sleep(delay)
+        else:
+            self.pca9685.writePWM(self.motL1, 0)
+            time.sleep(delay)
+            self.pca9685.writePWM(self.motL2, 0)
+            time.sleep(delay)
+
+        if motB > 0:
+            self.pca9685.writePWM(self.motR1, mapValues(motB, 0.0, 1.0,
+                                  self.minSpeed, self.maxSpeed))
+            time.sleep(delay)
+            self.pca9685.writePWM(self.motR2, 0)
+            time.sleep(delay)
+        elif motB < 0:
+            self.pca9685.writePWM(self.motR1, 0)
+            time.sleep(delay)
+            self.pca9685.writePWM(self.motR2, mapValues(abs(motB), 0.0, 1.0,
+                                  self.minSpeed, self.maxSpeed))
+            time.sleep(delay)
+        else:
+            self.pca9685.writePWM(self.motR1, 0)
+            time.sleep(delay)
+            self.pca9685.writePWM(self.motR2, 0)
+            time.sleep(delay)
